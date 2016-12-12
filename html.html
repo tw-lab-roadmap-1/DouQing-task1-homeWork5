@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exam</title>
+    <link rel="stylesheet" href="./css.css">
+    <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
+    <script src="./js.js"></script>
+</head>
+<body>
+<div id="exam" class="container">
+    <div id="title">
+        <h2>统一建模语言</h2>
+    </div>
+    <div id="info">
+        <div id="declare" class="row">
+            <span class="col-lg-4">考试科目:统一建模语言</span>
+            <span class="col-lg-4">时间：100分钟</span>
+            <span class="col-lg-4">得分：<input type="text" value="" class="input-sm" id="score"/></span>
+        </div>
+        <div id="write" class="row">
+            <span class="col-lg-4">班级(必填)：<input type="text" class="input-sm" id="className"/></span>
+            <span class="col-lg-4">学号(必填)：<input type="text" class="input-sm" id="number"/></span>
+            <span class="col-lg-4">姓名(必填)：<input type="text" class="input-sm" id="name"/></span>
+        </div>
+    </div>
+
+    <div id="content">
+        <div id="first" class="topic">
+            <h4>一 . 填空题（每题10分，共20分）</h4>
+            <div class="question">
+                <p>1 . UML的中文全称是：</p>
+                <input class="input-sm" type="text" name="tip1"/>
+            </div>
+            <div class="question">
+                <p>2 . 对象最突出的特征是：</p>
+                <input class="input-sm" type="text" value="" size="10" name="tip2"/>
+                <input class="input-sm" type="text" value="" size="10" name="tip2"/>
+                <input class="input-sm" type="text" value="" size="10" name="tip2"/>
+            </div>
+        </div>
+        <div id="second" class="topic">
+            <h4>二 . 选择题（每题10分，共20分）</h4>
+            <div class="question">
+                <p>1 . UML与软件工程的关系是：</p>
+                <div class="radio">
+                    <label>
+                        <input type="radio" value="A" name="tip3">
+                        (A)UML就是软件工程
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" value="B" name="tip3">
+                        (B)UML就是软件工程
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" value="C" name="tip3">
+                        (C)UML就是软件工程
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" value="D" name="tip3">
+                        (D)UML就是软件工程
+                    </label>
+                </div>
+            </div>
+            <div class="question">
+                <p>2 . Java语言支持：</p>
+                <div class="radio">
+                    <label>
+                        <input type="radio" value="A" name="tip4">
+                        (A)单继承
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" value="B" name="tip4">
+                        (B)多继承
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" value="C" name="tip4">
+                        (C)单继承和多继承都支持
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" value="D" name="tip4">
+                        (D)单继承和多继承都不支持
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div id="third" class="topic">
+            <h4>三 . 多项选择题（每题10分，共20分）</h4>
+            <div class="question">
+                <p> 1 . 用例的粒度分为以下哪三种：</p>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="A" name="tip5">
+                        (A)概述级
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="B" name="tip5">
+                        (B)需求级
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="C" name="tip5">
+                        (C)用户目标级
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="D" name="tip5">
+                        (D)子功能级
+                    </label>
+                </div>
+            </div>
+            <div class="question">
+                <p>2 . 类图由以下哪三个部分组成：</p>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="A" name="tip6">
+                        (A)名称(Name)
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="B" name="tip6">
+                        (B)属性(Attribude)
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="C" name="tip6">
+                        (C)操作(Operation)
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="D" name="tip6">
+                        (D)方法(Function)
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div id="forth" class="topic">
+            <h4>四 . 判断题（每题10分，共20分）</h4>
+            <div class="question">
+                <div class="radio">
+                    <span>1 . 用例图只是用于和客户交流和沟通的，用于确定需求。</span>
+                    <label>
+                        <input type="radio" value="right" name="tip7">
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </label>
+                    <label>
+                        <input type="radio" value="wrong" name="tip7">
+                        <span class="glyphicon glyphicon-remove"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="question">
+                <div class="radio">
+                    <span>2 . 在状态图中，终止状态在一个状态图中允许有任意多个。</span>
+                    <label>
+                        <input type="radio" value="right" name="tip8">
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </label>
+                    <label>
+                        <input type="radio" value="wrong" name="tip8">
+                        <span class="glyphicon glyphicon-remove"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div id="fifth" class="topic">
+            <h4>五 . 简答题（每题20分，共20分）</h4>
+            <div class="question">
+                <p>1 . 简述什么是模型以及模型的表现形式？</p>
+                <textarea class="form-control" rows="3" name="tip9"></textarea>
+            </div>
+        </div>
+        <div id="submit">
+            <button onclick="score()" class="btn btn-info">计算分数</button>
+        </div>
+    </div>
+</div>
+
+<script src="./dist/js/bootstrap.min.js"></script>
+</body>
+</html>
